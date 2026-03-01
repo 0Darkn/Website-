@@ -1,3 +1,4 @@
+[English](https://github.com/0Darkn/Website-/blob/main/en-README.md)
 # 🌐 Projeto Bem-Vindo (Flask + Qt + Web)
 
 ## 🛠 Tecnologias Utilizadas
