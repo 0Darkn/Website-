@@ -237,10 +237,10 @@ python app.py
 
 # 🧠 O que este projeto faz
 
-✔ Qt controla o servidor
-✔ Flask serve HTML
-✔ HTML estrutura a página
-✔ CSS cria animações e design
-✔ JavaScript adiciona interação
+- ✔ Qt controla o servidor
+- ✔ Flask serve HTML
+- ✔ HTML estrutura a página
+- ✔ CSS cria animações e design
+- ✔ JavaScript adiciona interação
 
 ---
