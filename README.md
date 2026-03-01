@@ -1,24 +1,26 @@
-## website 
-🐍 Flask (servidor web)
+# 🌐 Projeto Bem-Vindo (Flask + Qt + Web)
 
-🖥 PyQt5 (janela desktop para controlar o servidor)
+## 🛠 Tecnologias Utilizadas
 
-🌐 HTML
+* 🐍 **Flask** (Servidor Web)
+* 🖥 **PyQt5** (Janela Desktop para controlar o servidor)
+* 🌐 **HTML**
+* 🎨 **CSS**
+* ⚡ **JavaScript**
 
-🎨 CSS
+📌 Página principal: **“Bem-Vindo”**
 
-⚡ JavaScript
+💻 Compatível com:
 
-
-A página será: “Bem-Vindo”
-
-Compatível com Windows 10 / Ubuntu / Raspberry Pi
-
+* Windows 10
+* Ubuntu
+* Raspberry Pi
 
 ---
 
-📁 Estrutura do Projeto
+# 📁 Estrutura do Projeto
 
+```
 projeto_bem_vindo/
 │
 ├── app.py
@@ -28,18 +30,21 @@ projeto_bem_vindo/
 └── static/
       ├── style.css
       └── script.js
-
+```
 
 ---
 
-🐍 1️⃣ app.py (Flask + Qt)
+# 🐍 1️⃣ app.py (Flask + Qt)
 
-Instalar primeiro:
+## 📦 Instalar Dependências
 
+```bash
 pip install flask PyQt5
+```
 
-Agora o código:
+## 💻 Código
 
+```python
 import sys
 import threading
 from flask import Flask, render_template
@@ -111,12 +116,13 @@ if __name__ == "__main__":
     janela = Janela()
     janela.show()
     sys.exit(app_qt.exec_())
-
+```
 
 ---
 
-🌐 2️⃣ templates/index.html
+# 🌐 2️⃣ templates/index.html
 
+```html
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -138,12 +144,13 @@ if __name__ == "__main__":
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
-
+```
 
 ---
 
-🎨 3️⃣ static/style.css
+# 🎨 3️⃣ static/style.css
 
+```css
 body {
     margin: 0;
     padding: 0;
@@ -187,53 +194,53 @@ button:hover {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
+```
 
 ---
 
-⚡ 4️⃣ static/script.js
+# ⚡ 4️⃣ static/script.js
 
+```javascript
 function mostrarMensagem() {
     const div = document.getElementById("mensagem");
     div.innerHTML = "🚀 Aplicação Full Stack Python + Qt + Flask!";
 }
-
+```
 
 ---
 
-🚀 Como Executar
+# 🚀 Como Executar
 
-1. Criar pastas templates e static
+## 1️⃣ Criar pastas
 
+Criar as pastas:
 
-2. Colocar cada ficheiro no respetivo local
+```
+templates
+static
+```
 
+## 2️⃣ Colocar cada ficheiro no respetivo local
 
-3. Executar:
+## 3️⃣ Executar
 
-
-
+```bash
 python app.py
+```
 
-4. Clicar:
+## 4️⃣ Na janela Qt:
 
-
-
-Ligar Servidor
-
-Abrir Página Web
-
-
+* Clicar **Ligar Servidor**
+* Clicar **Abrir Página Web**
 
 ---
 
-🧠 O que este projeto faz
+# 🧠 O que este projeto faz
 
 ✔ Qt controla o servidor
 ✔ Flask serve HTML
 ✔ HTML estrutura a página
-✔ CSS faz animação e design
+✔ CSS cria animações e design
 ✔ JavaScript adiciona interação
-
 
 ---
